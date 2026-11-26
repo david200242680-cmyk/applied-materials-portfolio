@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bilingual professional portfolio for an Applied Materials TE applicant, highlighting semiconductor manufacturing, process improvement and production leadership experience.">
+<title>Professional Portfolio | Semiconductor Manufacturing & Process Improvement</title>
+<style>
+:root{--bg:#07111f;--panel:#101e30;--panel2:#13243a;--text:#edf4fc;--muted:#a8b8ca;--line:rgba(180,205,230,.18);--accent:#64c7e8;--accent2:#9adcf0;--white:#fff;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#07111f 0%,#0a1727 52%,#07111f 100%);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:13px;letter-spacing:.16em;font-weight:800;color:var(--accent2)}.links{display:flex;gap:24px;font-size:12px;color:var(--muted)}.links a:hover{color:var(--accent)}
+.hero{padding:100px 0 82px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(100,199,232,.13);border-radius:50%;right:-140px;top:-150px;box-shadow:0 0 0 55px rgba(100,199,232,.025),0 0 0 110px rgba(100,199,232,.02);pointer-events:none}
+.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.05;letter-spacing:-.045em;max-width:850px;margin:20px 0}.hero h1 span{color:var(--accent2)}.lead{font-size:18px;color:#c3d1df;max-width:720px}.cn{color:var(--muted);font-size:14px}.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:11px 18px;border-radius:5px;border:1px solid var(--accent);font-size:13px;font-weight:700}.btn.primary{background:var(--accent);color:#061321}.btn.secondary{color:var(--text);border-color:var(--line)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:60px}.metric{border-top:1px solid var(--line);padding:17px 12px 0 0}.metric strong{display:block;font-size:25px;color:var(--accent2)}.metric span{font-size:12px;color:var(--muted)}
+section{padding:76px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:32px}.section-head h2{font-size:30px;letter-spacing:-.03em;margin:5px 0}.section-head p{color:var(--muted);font-size:13px;max-width:420px;margin:0}.kicker{font-size:11px;letter-spacing:.18em;color:var(--accent);font-weight:800;text-transform:uppercase}
+.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.card{background:linear-gradient(145deg,rgba(19,36,58,.94),rgba(12,26,43,.94));border:1px solid var(--line);border-radius:10px;padding:26px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:8px 0;color:#c0cedc;font-size:14px}.card .sub{color:var(--accent2);font-size:12px;font-weight:700}.bullets{padding-left:18px;color:#c0cedc;font-size:14px}.bullets li{margin:8px 0}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.tag{border:1px solid rgba(100,199,232,.28);background:rgba(100,199,232,.07);color:#c9eaf5;padding:6px 10px;border-radius:4px;font-size:12px}
+.timeline{display:grid;gap:14px}.role{display:grid;grid-template-columns:190px 1fr;gap:24px}.date{font-size:12px;color:var(--accent2);padding-top:5px}.rolebody{border-left:1px solid rgba(100,199,232,.45);padding:0 0 24px 24px}.rolebody h3{margin:0;font-size:18px}.rolebody .meta{font-size:13px;color:var(--muted)}.rolebody p,.rolebody li{font-size:14px;color:#c0cedc}
+.projectgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{min-height:230px;position:relative;overflow:hidden}.project:before{content:"";position:absolute;width:150px;height:150px;border:1px solid rgba(100,199,232,.18);border-radius:50%;right:-45px;bottom:-55px;box-shadow:0 0 0 25px rgba(100,199,232,.025)}.project .num{font-size:11px;color:var(--accent);letter-spacing:.15em}.project h3{font-size:19px;margin:12px 0}.project p{max-width:490px}
+.skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.skill{padding:16px;border:1px solid var(--line);border-radius:7px;background:rgba(16,30,48,.6)}.skill b{display:block;font-size:13px}.skill span{font-size:12px;color:var(--muted)}
+.edu{display:flex;justify-content:space-between;gap:20px;align-items:center}.edu h3{margin:0}.edu p{margin:5px 0;color:var(--muted);font-size:13px}
+footer{padding:35px 0 55px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}.footin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.langnote{font-size:12px;color:var(--muted);margin-top:8px}
+@media(max-width:760px){.links{gap:12px}.links a{font-size:11px}.hero{padding:70px 0 55px}.metrics{grid-template-columns:repeat(2,1fr);margin-top:38px}.grid2,.projectgrid{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:5px}.rolebody{padding-left:17px}.skillgrid{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:8px}.edu{display:block}}
+@media(max-width:430px){.wrap{width:min(var(--max),calc(100% - 30px))}.links a:nth-child(2),.links a:nth-child(4){display:none}.skillgrid{grid-template-columns:1fr}.card{padding:20px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#top">PROFESSIONAL PORTFOLIO</a><div class="links"><a href="#profile">Profile</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+<main id="top">
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Applied Materials · TE Applicant</div>
+<p class="lead" style="font-size:15px;font-weight:700;letter-spacing:.12em;color:var(--accent2);margin:0 0 12px">HONG YU</p>
+<h1>Semiconductor Manufacturing.<br><span>Process Improvement.</span></h1>
+<p class="lead">A manufacturing leader with hands-on experience in 2.5D IC packaging operations, production management, quality improvement and cross-functional problem solving.</p>
+<p class="cn">具備 2.5D IC 封裝製造現場管理經驗，專注於生產管理、品質改善、製程問題分析與跨部門協作。</p>
+<div class="actions"><a class="btn primary" href="#experience">Explore Experience</a><a class="btn secondary" href="#projects">View Key Projects</a></div>
+<div class="metrics">
+<div class="metric"><strong>2.5D IC</strong><span>Packaging Operations · 封裝製程</span></div>
+<div class="metric"><strong>~80</strong><span>Operators Led · 團隊管理規模</span></div>
+<div class="metric"><strong>WIP / OEE</strong><span>Production Control · 生產管理</span></div>
+<div class="metric"><strong>CI</strong><span>Continuous Improvement · 持續改善</span></div>
+</div>
+</div></header>
+
+<section id="profile"><div class="wrap">
+<div class="section-head"><div><div class="kicker">01 / Profile</div><h2>Professional Summary</h2></div><p>Manufacturing execution supported by structured analysis, operational discipline and teamwork.</p></div>
+<div class="grid2">
+<div class="card"><h3>Professional Overview｜專業摘要</h3>
+<p>Currently working as a Manufacturing Supervisor in semiconductor packaging, overseeing 2.5D IC back-end production operations and leading approximately 80 operators.</p>
+<p>Experienced in balancing output, delivery performance, WIP control, production scheduling, equipment utilization and quality requirements. Works closely with process and equipment teams to investigate abnormalities, identify root causes and implement corrective actions.</p>
+<p class="cn">目前任職於半導體封裝製造領域，負責 2.5D IC 後段製程現場管理，帶領約 80 位作業員。具備產量與交期管理、WIP 控管、排程優化、設備稼動率及品質管理經驗，並與製程及設備團隊合作處理異常、分析根因及推動改善。</p></div>
+<div class="card"><h3>Core Strengths｜核心優勢</h3><ul class="bullets">
+<li>Production execution and shop-floor leadership｜生產執行與現場管理</li>
+<li>Data-based troubleshooting｜以數據分析協助問題排除</li>
+<li>Cross-functional coordination｜跨部門溝通協作</li>
+<li>Quality, delivery and operational discipline｜品質、交期與現場紀律</li>
+<li>Continuous improvement mindset｜持續改善思維</li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-head"><div><div class="kicker">02 / Experience</div><h2>Professional Experience</h2></div><p>Experience in high-volume semiconductor manufacturing operations.</p></div>
+<div class="timeline">
+<div class="role"><div class="date">Current Experience</div><div class="rolebody"><h3>Manufacturing Supervisor</h3><div class="meta">Siliconware Precision Industries Co., Ltd. (SPIL)｜矽品精密</div>
+<ul class="bullets">
+<li>Manage daily 2.5D IC packaging back-end operations and lead approximately 80 operators.</li>
+<li>Monitor production output, product delivery, WIP, production schedules and Q-Time requirements.</li>
+<li>Track equipment uptime / utilization, OEE, yield and quality performance against operational KPIs.</li>
+<li>Coordinate with process and equipment engineering teams to investigate production issues, including missing balls, ball adhesion and marking misalignment.</li>
+<li>Support quality audits, 6S execution and shop-floor safety management.</li>
+</ul>
+<p class="cn">負責 2.5D IC 封裝後段製程日常運作與人員管理，追蹤產量、交期、WIP、Q-Time、設備稼動率、OEE、良率及品質 KPI；與製程、設備團隊協作處理缺球、黏球、印字偏移等異常，並推動品質稽核、6S 與安全管理。</p>
+</div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="section-head"><div><div class="kicker">03 / Selected Projects</div><h2>Improvement & Problem Solving</h2></div><p>Selected examples of operational improvement and risk prevention.</p></div>
+<div class="projectgrid">
+<div class="card project"><div class="num">PROJECT 01</div><h3>Loader / Unloader Workflow Improvement</h3><p>Revised the material-handling sequence: after the front-side pusher feeds the material into position, the front-side section can move out independently instead of waiting for the loader and unloader to complete the full cycle together.</p><p class="cn">改善 Loader / Unloader 搬送流程：前段推桿完成進料後，前段即可先行離開，不必等待 Loader 與 Unloader 整個流程同步完成，優化設備作業流程。</p><div class="taglist"><span class="tag">Workflow Optimization</span><span class="tag">Material Handling</span><span class="tag">Process Improvement</span></div></div>
+<div class="card project"><div class="num">PROJECT 02</div><h3>Material Mix-up Prevention</h3><p>Identified subtle marking differences between two materials and organized operator sorting and verification. Added a re-scanning step at the test area before shipment to reduce the risk of material mix-up reaching the customer.</p><p class="cn">針對不同料件印字差異不明顯的混料風險，安排人員辨識、分類，並於出貨前增加測試區再次掃描確認，降低異常流出風險。</p><div class="taglist"><span class="tag">Risk Prevention</span><span class="tag">Quality Control</span><span class="tag">Verification</span></div></div>
+<div class="card project"><div class="num">PROJECT 03</div><h3>Process Abnormality Resolution</h3><p>Worked with process and equipment teams to analyze recurring production abnormalities such as missing solder balls, ball adhesion and marking misalignment, supporting corrective actions and process stability.</p><p class="cn">與製程及設備團隊共同分析缺球、黏球、印字偏移等生產異常，協助釐清問題並推動改善，以提升製程穩定性。</p><div class="taglist"><span class="tag">Root Cause Analysis</span><span class="tag">Yield / Quality</span><span class="tag">Cross-functional</span></div></div>
+<div class="card project"><div class="num">PROJECT 04</div><h3>Anti-Mix System Development Project</h3><p>Participated in an anti-mix system development project focused on strengthening production identification and material control.</p><p class="cn">參與防混系統開發專案，著重強化生產辨識與物料管控，降低混料風險。</p><div class="taglist"><span class="tag">System Development</span><span class="tag">Production Control</span><span class="tag">Quality Assurance</span></div></div>
+</div>
+<p class="langnote">Note: Project descriptions are based on the experience information provided. Quantitative results can be added when verified figures are available.｜以上專案依目前提供的經歷整理；如有確認過的改善數據，可再補入量化成果。</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="section-head"><div><div class="kicker">04 / Skills</div><h2>Core Competencies</h2></div><p>Capabilities relevant to technical operations, process support and manufacturing problem solving.</p></div>
+<div class="skillgrid">
+<div class="skill"><b>Manufacturing Management</b><span>製造管理</span></div><div class="skill"><b>Production Management</b><span>生產管理</span></div><div class="skill"><b>Semiconductor Manufacturing</b><span>半導體製造</span></div>
+<div class="skill"><b>Process Improvement</b><span>製程改善</span></div><div class="skill"><b>Yield Improvement</b><span>良率提升</span></div><div class="skill"><b>Quality Control</b><span>品質管制</span></div>
+<div class="skill"><b>Problem Solving</b><span>問題解決</span></div><div class="skill"><b>Root Cause Analysis</b><span>根因分析</span></div><div class="skill"><b>Data Analysis</b><span>數據分析</span></div>
+<div class="skill"><b>WIP Management</b><span>在製品管理</span></div><div class="skill"><b>OEE</b><span>設備綜合效率</span></div><div class="skill"><b>Team Management</b><span>團隊管理</span></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="section-head"><div><div class="kicker">05 / Education</div><h2>Education</h2></div><p>Academic background in information systems and technology.</p></div>
+<div class="card edu"><div><h3>Providence University｜靜宜大學</h3><p>Bachelor's Degree · Department of Information Management</p><p>學士學位 · 資訊管理學系</p></div><div class="sub">TAIWAN</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="section-head"><div><div class="kicker">06 / Contact</div><h2>Let's Connect</h2></div><p>Open to discussing technical engineering opportunities and semiconductor manufacturing challenges.</p></div>
+<div class="card"><h3>Thank you for your time.</h3><p>Thank you for reviewing my professional profile. I look forward to the opportunity to contribute my manufacturing experience, analytical mindset and continuous-improvement approach.</p><p class="cn">感謝您閱讀我的專業履歷，期待有機會將製造現場經驗、問題分析能力及持續改善精神，運用於新的工作挑戰。</p><div class="taglist" style="margin-top:20px"><a class="tag" href="mailto:david200242680@gmail.com">Email: david200242680@gmail.com</a><a class="tag" href="tel:+886906362283">Phone: +886 906-362-283</a></div><p class="langnote">Email and phone links are clickable on supported devices.｜點選 Email 或 Phone 可直接開啟郵件或撥號功能。</p></div>
+</div></section>
+</main>
+<footer><div class="wrap footin"><span>© Hong Yu · Professional Portfolio · Applied Materials TE Application</span><span>English-first · Traditional Chinese Support</span></div></footer>
+</body></html>
